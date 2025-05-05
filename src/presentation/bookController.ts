@@ -26,7 +26,7 @@ export class BookController {
       if (book) {
         res.status(200).json(book);
       } else {
-        res.status(404).json({ error: "書籍が見つかりません" });
+        res.status(404).json({ error: "書籍が見つかりませんでした" });
       }
     } catch (error) {
       console.log(error);
